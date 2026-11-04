@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75c30ba0-78e7-4d8a-b957-22fcdd3acdcc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/video/video-1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-2.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-3.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-4.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-5.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-6.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-7.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/video-8.mp4" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;krishnamapa20242024&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/krishnamapa20242024/En-Memoria-De-Marcos-6.git&quot;,
+    &quot;accountId&quot;: &quot;ae45e201-c03d-460d-afab-246240e7110d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3LXHfs34gSn6OFJUtkH1J2aiI8f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/KRISHNA COLIVORO/Videos/En-Memoria-De-Marcos-7",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\KRISHNA COLIVORO\\AppData\\Local\\Programs\\WebStorm 2025.2.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75c30ba0-78e7-4d8a-b957-22fcdd3acdcc" name="Changes" comment="" />
+      <created>1793593601040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793593601040</updated>
+      <workItem from="1793593602345" duration="1216000" />
+      <workItem from="1793713955972" duration="667000" />
+      <workItem from="1793715632945" duration="541000" />
+      <workItem from="1793716630726" duration="927000" />
+      <workItem from="1793717683575" duration="153000" />
+      <workItem from="1793717905133" duration="687000" />
+      <workItem from="1793733619099" duration="3918000" />
+      <workItem from="1793761999206" duration="131000" />
+      <workItem from="1793762567773" duration="653000" />
+      <workItem from="1793764066753" duration="230000" />
+      <workItem from="1793764861278" duration="1379000" />
+      <workItem from="1793818614334" duration="650000" />
+      <workItem from="1793819932114" duration="1611000" />
+    </task>
+    <task id="LOCAL-00001" summary="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video">
+      <option name="closed" value="true" />
+      <created>1793762646670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793762646670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video">
+      <option name="closed" value="true" />
+      <created>1793820078326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793820078326</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primera pagina" />
+    <MESSAGE value="pagina de inicio" />
+    <MESSAGE value="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video" />
+  </component>
+</project>
