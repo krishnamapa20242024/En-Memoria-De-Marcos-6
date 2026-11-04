@@ -1,0 +1,80 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"75c30ba0-78e7-4d8a-b957-22fcdd3acdcc\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-1.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-2.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-3.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-4.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-5.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-6.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-7.mp4\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/video/video-8.mp4\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n      <option value=\"repository\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;krishnamapa20242024&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/krishnamapa20242024/En-Memoria-De-Marcos-6.git&quot;,\r\n    &quot;accountId&quot;: &quot;ae45e201-c03d-460d-afab-246240e7110d&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3LXHfs34gSn6OFJUtkH1J2aiI8f\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"junie.onboarding.icon.badge.shown\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/KRISHNA COLIVORO/Videos/En-Memoria-De-Marcos-7\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"to.speed.mode.migration.done\": \"true\",\r\n    \"ts.external.directory.path\": \"C:\\\\Users\\\\KRISHNA COLIVORO\\\\AppData\\\\Local\\\\Programs\\\\WebStorm 2025.2.5\\\\plugins\\\\javascript-plugin\\\\jsLanguageServicesImpl\\\\external\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"75c30ba0-78e7-4d8a-b957-22fcdd3acdcc\" name=\"Changes\" comment=\"\" />\r\n      <created>1793593601040</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1793593601040</updated>\r\n      <workItem from=\"1793593602345\" duration=\"1216000\" />\r\n      <workItem from=\"1793713955972\" duration=\"667000\" />\r\n      <workItem from=\"1793715632945\" duration=\"541000\" />\r\n      <workItem from=\"1793716630726\" duration=\"927000\" />\r\n      <workItem from=\"1793717683575\" duration=\"153000\" />\r\n      <workItem from=\"1793717905133\" duration=\"687000\" />\r\n      <workItem from=\"1793733619099\" duration=\"3918000\" />\r\n      <workItem from=\"1793761999206\" duration=\"131000\" />\r\n      <workItem from=\"1793762567773\" duration=\"653000\" />\r\n      <workItem from=\"1793764066753\" duration=\"230000\" />\r\n      <workItem from=\"1793764861278\" duration=\"1379000\" />\r\n      <workItem from=\"1793818614334\" duration=\"650000\" />\r\n      <workItem from=\"1793819932114\" duration=\"1611000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1793762646670</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1793762646670</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1793820078326</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1793820078326</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"primera pagina\" />\r\n    <MESSAGE value=\"pagina de inicio\" />\r\n    <MESSAGE value=\"Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0e68d6aa0a5f1313d49dbbd44a8f92e88378649e)
++++ b/.idea/workspace.xml	(date 1793822686655)
+@@ -4,16 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="75c30ba0-78e7-4d8a-b957-22fcdd3acdcc" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/video/video-1.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-2.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-3.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-4.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-5.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-6.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-7.mp4" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/video/video-8.mp4" beforeDir="false" />
+-    </list>
++    <list default="true" id="75c30ba0-78e7-4d8a-b957-22fcdd3acdcc" name="Changes" comment="Subir pagina memorial Marcos" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -95,6 +86,7 @@
+       <workItem from="1793764861278" duration="1379000" />
+       <workItem from="1793818614334" duration="650000" />
+       <workItem from="1793819932114" duration="1611000" />
++      <workItem from="1793822259523" duration="419000" />
+     </task>
+     <task id="LOCAL-00001" summary="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video">
+       <option name="closed" value="true" />
+@@ -112,7 +104,31 @@
+       <option name="project" value="LOCAL" />
+       <updated>1793820078326</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="pagina de incio">
++      <option name="closed" value="true" />
++      <created>1793822340915</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1793822340915</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Subir pagina memorial Marcos">
++      <option name="closed" value="true" />
++      <created>1793822656775</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1793822656775</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Subir pagina memorial Marcos">
++      <option name="closed" value="true" />
++      <created>1793822678063</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1793822678063</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -122,6 +138,8 @@
+     <MESSAGE value="primera pagina" />
+     <MESSAGE value="pagina de inicio" />
+     <MESSAGE value="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Crea sitio homenaje En memoria de Marcos Rodriguez&#10;&#10;- Agrega páginas de inicio, historia, familia, pasiones, recuerdos y galería&#10;- Integra Tailwind CSS y Alpine.js con menú responsive&#10;- Incluye fotos y videos en las carpetas img y video" />
++    <MESSAGE value="pagina de incio" />
++    <MESSAGE value="Subir pagina memorial Marcos" />
++    <option name="LAST_COMMIT_MESSAGE" value="Subir pagina memorial Marcos" />
+   </component>
+ </project>
+\ No newline at end of file
