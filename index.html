@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | En memoria de Marcos Rodriguez</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important}</style>
+<style type="text/tailwindcss">
+@layer components{
+.card{@apply rounded-xl bg-white p-6 ring-1 ring-cyan-900/10}
+.btn{@apply inline-block rounded-full bg-amber-300 px-6 py-3 font-semibold text-cyan-950 transition hover:bg-amber-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200/60}
+.h2{@apply font-serif text-3xl text-cyan-950 md:text-4xl}
+.field{@apply w-full rounded-lg border border-cyan-900/30 bg-white px-4 py-2 text-cyan-950 focus:outline-none focus:ring-2 focus:ring-cyan-700}
+}
+</style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800" x-data="{open:false}">
+<header class="sticky top-0 z-30 bg-cyan-950">
+ <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+  <a href="index.html" class="font-serif text-lg text-white">Marcos Rodriguez</a>
+  <button class="rounded p-2 text-white md:hidden" @click="open=!open" :aria-expanded="open" aria-label="Abrir menú">&#9776;</button>
+  <nav class="hidden gap-6 md:flex" aria-label="Principal"><a href="index.html" class="py-2 font-semibold text-amber-300" aria-current="page">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+ </div>
+ <nav x-show="open" x-cloak class="flex flex-col border-t border-cyan-800 px-4 pb-3 md:hidden" aria-label="Menú móvil"><a href="index.html" class="py-2 font-semibold text-amber-300" aria-current="page">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+</header>
+<main>
+<section class="relative overflow-hidden bg-cyan-950 px-4 py-24 text-white md:py-36">
+ <span class="pointer-events-none absolute -right-6 -top-10 select-none font-serif text-[16rem] leading-none text-white/5 md:text-[26rem]" aria-hidden="true">10</span>
+ <div class="relative mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-[1fr_20rem]"><div>
+  <p class="text-cyan-200">Lelbun, 24 de noviembre de 1975 – 12 de julio de 2025</p>
+  <h1 class="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">Marcos Erasmo Mario Rodriguez</h1>
+  <p class="mt-5 max-w-xl text-lg text-cyan-100">Esposo, padre, abuelo, pescador, carpintero y el alma de la fiesta.</p>
+  <blockquote class="mt-8 max-w-xl border-l-4 border-amber-300 pl-4 font-serif text-xl italic">Este no es un adiós sino un hasta siempre.</blockquote>
+  <div class="mt-10 flex flex-wrap gap-4"><a class="btn" href="historia.html">Conocer su historia</a><a class="btn bg-transparent text-white ring-2 ring-white/50 hover:bg-white/10" href="recuerdos.html">Dejar un recuerdo</a></div>
+ </div>
+ <figure><img src="img/marcos-sombrero.jpg" alt="Marcos con sombrero de huaso, sentado en el campo junto a un asado" loading="lazy" class="w-full rounded-2xl object-cover aspect-[3/4] ring-4 ring-amber-300/40"></figure>
+ </div>
+</section>
+<section class="mx-auto max-w-5xl px-4 py-16">
+ <h2 class="h2">Un hombre perseverante y luchador</h2>
+ <p class="mt-4 max-w-prose">Salió adelante junto a su familia, les dio estudios a sus tres hijos y los ayudó a cumplir sus sueños. Esta página reúne su vida, su gente y lo que más amaba.</p>
+ <div class="mt-10 grid gap-6 sm:grid-cols-3">
+  <a href="historia.html" class="card transition hover:ring-amber-400"><h3 class="font-serif text-xl text-cyan-950">Su historia</h3><p class="mt-2">De la escuela de Lelbun a la directiva de los pescadores.</p></a>
+  <a href="familia.html" class="card transition hover:ring-amber-400"><h3 class="font-serif text-xl text-cyan-950">Su familia</h3><p class="mt-2">Su esposa, sus hijos, nietos y ahijados.</p></a>
+  <a href="pasiones.html" class="card transition hover:ring-amber-400"><h3 class="font-serif text-xl text-cyan-950">Sus pasiones</h3><p class="mt-2">El mar, el fútbol, la carpintería y la pista de baile.</p></a>
+ </div>
+</section>
+</main>
+<footer class="bg-cyan-950 px-4 py-8 text-center text-cyan-100">
+ <p class="font-serif text-lg text-white">Marcos Erasmo Mario Rodriguez</p>
+ <p>Nació el 24 de noviembre de 1975 y partió el 12 de julio de 2025, a las 17:09 hrs, en la casa de su hija del medio.</p>
+ <p>Lo queremos de aquí a la luna y las estrellas.</p>
+</footer>
+</body>
+</html>

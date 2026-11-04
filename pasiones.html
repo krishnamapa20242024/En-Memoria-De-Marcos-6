@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pasiones | En memoria de Marcos Rodriguez</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important}</style>
+<style type="text/tailwindcss">
+@layer components{
+.card{@apply rounded-xl bg-white p-6 ring-1 ring-cyan-900/10}
+.btn{@apply inline-block rounded-full bg-amber-300 px-6 py-3 font-semibold text-cyan-950 transition hover:bg-amber-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200/60}
+.h2{@apply font-serif text-3xl text-cyan-950 md:text-4xl}
+.field{@apply w-full rounded-lg border border-cyan-900/30 bg-white px-4 py-2 text-cyan-950 focus:outline-none focus:ring-2 focus:ring-cyan-700}
+}
+</style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800" x-data="{open:false}">
+<header class="sticky top-0 z-30 bg-cyan-950">
+ <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+  <a href="index.html" class="font-serif text-lg text-white">Marcos Rodriguez</a>
+  <button class="rounded p-2 text-white md:hidden" @click="open=!open" :aria-expanded="open" aria-label="Abrir menú">&#9776;</button>
+  <nav class="hidden gap-6 md:flex" aria-label="Principal"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 font-semibold text-amber-300" aria-current="page">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+ </div>
+ <nav x-show="open" x-cloak class="flex flex-col border-t border-cyan-800 px-4 pb-3 md:hidden" aria-label="Menú móvil"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 font-semibold text-amber-300" aria-current="page">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+</header>
+<main>
+<section class="mx-auto max-w-5xl px-4 py-16" x-data='{m:null,items:[
+{t:"Pesca artesanal",e:"🎣",d:"Fue pescador artesanal y dirigente del sindicato Redes de Lelbun. Del mar le quedaron un naufragio en Punta Bruja y muchas historias que contar."},
+{t:"Fútbol",e:"⚽",d:"Presidente y jugador del club Villa El Lago, con la camiseta 10. Ni un accidente automovilístico con jugadores e hinchas le quitó las ganas: mantuvo vivo al club, junto a su primo Chañe, su yunta en cada partido."},
+{t:"Carpintería",e:"🪚",d:"Su última profesión. Con su casco blanco dirigía a sus obreros y daba órdenes. Aunque a veces no tuviera la razón, era imposible llevarle la contra."},
+{t:"Baile y humor",e:"💃",d:"El primero en salir a la pista y el alma de la fiesta. Hacía reír a todos con sus imitaciones y sus chistes de doble sentido."}]}' @keydown.escape.window="m=null">
+ <h1 class="h2">Sus pasiones</h1>
+ <p class="mt-3">Elige una para ver más.</p>
+ <div class="mt-8 grid gap-6 sm:grid-cols-2">
+  <template x-for="(it,i) in items" :key="i"><button @click="m=it" class="card flex items-center gap-4 text-left transition hover:ring-amber-400 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-300"><span class="text-4xl" x-text="it.e" aria-hidden="true"></span><span class="font-serif text-xl text-cyan-950" x-text="it.t"></span></button></template>
+ </div>
+ <div x-show="m" x-cloak class="fixed inset-0 z-40 flex items-center justify-center bg-cyan-950/70 p-4" @click.self="m=null" role="dialog" aria-modal="true">
+  <div class="card max-w-md" x-trap>
+   <h2 class="font-serif text-2xl text-cyan-950" x-text="m&&m.t"></h2>
+   <p class="mt-3" x-text="m&&m.d"></p>
+   <button class="btn mt-6" @click="m=null">Cerrar</button>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="bg-cyan-950 px-4 py-8 text-center text-cyan-100">
+ <p class="font-serif text-lg text-white">Marcos Erasmo Mario Rodriguez</p>
+ <p>Nació el 24 de noviembre de 1975 y partió el 12 de julio de 2025, a las 17:09 hrs, en la casa de su hija del medio.</p>
+ <p>Lo queremos de aquí a la luna y las estrellas.</p>
+</footer>
+</body>
+</html>

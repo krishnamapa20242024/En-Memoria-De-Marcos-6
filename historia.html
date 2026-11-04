@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historia | En memoria de Marcos Rodriguez</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important}</style>
+<style type="text/tailwindcss">
+@layer components{
+.card{@apply rounded-xl bg-white p-6 ring-1 ring-cyan-900/10}
+.btn{@apply inline-block rounded-full bg-amber-300 px-6 py-3 font-semibold text-cyan-950 transition hover:bg-amber-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200/60}
+.h2{@apply font-serif text-3xl text-cyan-950 md:text-4xl}
+.field{@apply w-full rounded-lg border border-cyan-900/30 bg-white px-4 py-2 text-cyan-950 focus:outline-none focus:ring-2 focus:ring-cyan-700}
+}
+</style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800" x-data="{open:false}">
+<header class="sticky top-0 z-30 bg-cyan-950">
+ <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+  <a href="index.html" class="font-serif text-lg text-white">Marcos Rodriguez</a>
+  <button class="rounded p-2 text-white md:hidden" @click="open=!open" :aria-expanded="open" aria-label="Abrir menú">&#9776;</button>
+  <nav class="hidden gap-6 md:flex" aria-label="Principal"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 font-semibold text-amber-300" aria-current="page">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+ </div>
+ <nav x-show="open" x-cloak class="flex flex-col border-t border-cyan-800 px-4 pb-3 md:hidden" aria-label="Menú móvil"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 font-semibold text-amber-300" aria-current="page">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+</header>
+<main>
+<section class="mx-auto max-w-3xl px-4 py-16" x-data="{open:1}">
+ <h1 class="h2">Su historia</h1>
+ <p class="mt-3">Toca cada etapa para leerla.</p>
+ <div class="mt-8 space-y-4">
+<div class="card"><h3><button class="flex w-full items-center justify-between text-left font-serif text-xl text-cyan-950" @click="open===1?open=0:open=1" :aria-expanded="open===1">Infancia en Lelbun<span x-text="open===1?'−':'+'" class="text-2xl text-amber-600"></span></button></h3>
+<p x-show="open===1" x-collapse x-cloak class="mt-3 max-w-prose">Hijo de María Mirta Rodriguez Ruiz y Raimundo Mario Paillan, fue el tercero de cinco hermanos. Cursó la enseñanza básica en la escuela de Lelbun. De adolescente fue catequista y colaboró en la iglesia, reemplazando a su padre, que era patrón de la iglesia.</p></div>
+<div class="card"><h3><button class="flex w-full items-center justify-between text-left font-serif text-xl text-cyan-950" @click="open===2?open=0:open=2" :aria-expanded="open===2">Primeros trabajos y servicio militar<span x-text="open===2?'−':'+'" class="text-2xl text-amber-600"></span></button></h3>
+<p x-show="open===2" x-collapse x-cloak class="mt-3 max-w-prose">Su primer trabajo fue sacar papas con la cuadrilla de don Jorge Guequen. Después trabajó en la pesquera de Queilen, donde conoció a Laura Navarrete. Cumplió el servicio militar en el regimiento de Infantería 26 Bulnes, en Chaitén, donde estuvo 10 meses.</p></div>
+<div class="card"><h3><button class="flex w-full items-center justify-between text-left font-serif text-xl text-cyan-950" @click="open===3?open=0:open=3" :aria-expanded="open===3">Matrimonio y familia<span x-text="open===3?'−':'+'" class="text-2xl text-amber-600"></span></button></h3>
+<p x-show="open===3" x-collapse x-cloak class="mt-3 max-w-prose">Al volver retomó su relación con Laura. Con su primera hija ya nacida, se casaron el 27 de abril de 1995. Tres años después nació su segunda hija y, nueve años más tarde, su último hijo. Compartió 31 años con su esposa y sus tres hijos.</p></div>
+<div class="card"><h3><button class="flex w-full items-center justify-between text-left font-serif text-xl text-cyan-950" @click="open===4?open=0:open=4" :aria-expanded="open===4">Pescador artesanal<span x-text="open===4?'−':'+'" class="text-2xl text-amber-600"></span></button></h3>
+<p x-show="open===4" x-collapse x-cloak class="mt-3 max-w-prose">Fue parte de la directiva del sindicato de pescadores Redes de Lelbun por varios años. Acumuló anécdotas: un naufragio con su tripulación en Punta Bruja, caídas al mar y perdidas en la neblina.</p></div>
+ </div>
+</section>
+</main>
+<footer class="bg-cyan-950 px-4 py-8 text-center text-cyan-100">
+ <p class="font-serif text-lg text-white">Marcos Erasmo Mario Rodriguez</p>
+ <p>Nació el 24 de noviembre de 1975 y partió el 12 de julio de 2025, a las 17:09 hrs, en la casa de su hija del medio.</p>
+ <p>Lo queremos de aquí a la luna y las estrellas.</p>
+</footer>
+</body>
+</html>

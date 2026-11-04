@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Familia | En memoria de Marcos Rodriguez</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important}</style>
+<style type="text/tailwindcss">
+@layer components{
+.card{@apply rounded-xl bg-white p-6 ring-1 ring-cyan-900/10}
+.btn{@apply inline-block rounded-full bg-amber-300 px-6 py-3 font-semibold text-cyan-950 transition hover:bg-amber-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200/60}
+.h2{@apply font-serif text-3xl text-cyan-950 md:text-4xl}
+.field{@apply w-full rounded-lg border border-cyan-900/30 bg-white px-4 py-2 text-cyan-950 focus:outline-none focus:ring-2 focus:ring-cyan-700}
+}
+</style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800" x-data="{open:false}">
+<header class="sticky top-0 z-30 bg-cyan-950">
+ <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+  <a href="index.html" class="font-serif text-lg text-white">Marcos Rodriguez</a>
+  <button class="rounded p-2 text-white md:hidden" @click="open=!open" :aria-expanded="open" aria-label="Abrir menú">&#9776;</button>
+  <nav class="hidden gap-6 md:flex" aria-label="Principal"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 font-semibold text-amber-300" aria-current="page">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+ </div>
+ <nav x-show="open" x-cloak class="flex flex-col border-t border-cyan-800 px-4 pb-3 md:hidden" aria-label="Menú móvil"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 font-semibold text-amber-300" aria-current="page">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 text-cyan-100 hover:text-amber-300">Recuerdos</a></nav>
+</header>
+<main>
+<section class="mx-auto max-w-4xl px-4 py-16" x-data='{tab:0,tabs:["Esposa e hijos","Nietos","Ahijados"]}'>
+ <h1 class="h2">Su familia</h1>
+ <div class="mt-8 flex flex-wrap gap-2" role="tablist">
+  <template x-for="(t,i) in tabs" :key="i"><button role="tab" :aria-selected="tab===i" @click="tab=i" x-text="t" class="rounded-full px-5 py-2 font-semibold transition focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200" :class="tab===i?'bg-cyan-950 text-white':'bg-white text-cyan-950 ring-1 ring-cyan-900/20 hover:bg-cyan-50'"></button></template>
+ </div>
+ <div class="mt-6 grid gap-6 md:grid-cols-2" x-show="tab===0">
+  <div class="card"><h2 class="font-serif text-xl text-cyan-950">Laura Navarrete</h2><p class="mt-2">Su esposa, a quien llamaba con cariño “su Mercedes”. Juntos formaron una familia durante 31 años.</p></div>
+  <div class="card"><h2 class="font-serif text-xl text-cyan-950">Camila, Mackarena y Maikol</h2><p class="mt-2">Les dio estudios a los tres. Camila y Mackarena, las dos mayores, ya tienen profesión y casa propia, y Maikol, el menor, está a punto de titularse de técnico en el liceo y estudia Ingeniería en Mecánica Automotriz en Puerto Montt. También quería a sus yernos.</p></div>
+  <figure class="text-center md:col-span-2"><img src="img/con-su-mercedes.jpg" alt="Marcos y su esposa en una selfie bajo un árbol" loading="lazy" class="mx-auto block max-h-[28rem] w-auto rounded-2xl"><figcaption class="mt-2 text-sm">Marcos y su Mercedes.</figcaption></figure>
+  <figure class="md:col-span-2"><img src="img/en-familia.jpg" alt="Marcos y su familia posando bajo un techo de madera en el bosque" loading="lazy" class="max-h-96 w-full rounded-2xl object-cover"><figcaption class="mt-2 text-sm">Marcos con su familia, de paseo.</figcaption></figure>
+ </div>
+ <div class="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4" x-show="tab===1" x-cloak>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Dylan</p><p>Nieto, hijo de Camila</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Benjamín</p><p>Nieto, hijo de Camila</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Isabella</p><p>Nieta, hija de Mackarena</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Jaimir</p><p>Nieto adoptivo</p></div>
+  <p class="max-w-prose sm:col-span-2 md:col-span-4">Eran su alegría. Prefería quedarse de niñero antes que ir a la carpintería.</p>
+  <figure class="sm:col-span-2 md:col-span-4"><img src="img/navidad-nietos.jpg" alt="Marcos sentado junto al árbol de Navidad con tres de sus nietos" loading="lazy" class="w-full rounded-2xl object-cover max-h-96"><figcaption class="mt-2 text-sm">Navidad con sus nietos.</figcaption></figure>
+ </div>
+ <div class="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-4" x-show="tab===2" x-cloak>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Barbara</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Elsita</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Bryan</p></div>
+  <div class="card text-center"><p class="font-serif text-xl text-cyan-950">Pablito</p></div>
+  <p class="max-w-prose sm:col-span-2 md:col-span-4">Sus cuatro ahijados, igual que sus sobrinos y sobrinas, estuvieron en su mente y corazón hasta el final.</p>
+ </div>
+</section>
+</main>
+<footer class="bg-cyan-950 px-4 py-8 text-center text-cyan-100">
+ <p class="font-serif text-lg text-white">Marcos Erasmo Mario Rodriguez</p>
+ <p>Nació el 24 de noviembre de 1975 y partió el 12 de julio de 2025, a las 17:09 hrs, en la casa de su hija del medio.</p>
+ <p>Lo queremos de aquí a la luna y las estrellas.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recuerdos | En memoria de Marcos Rodriguez</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<style>[x-cloak]{display:none!important}</style>
+<style type="text/tailwindcss">
+@layer components{
+.card{@apply rounded-xl bg-white p-6 ring-1 ring-cyan-900/10}
+.btn{@apply inline-block rounded-full bg-amber-300 px-6 py-3 font-semibold text-cyan-950 transition hover:bg-amber-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-200/60}
+.h2{@apply font-serif text-3xl text-cyan-950 md:text-4xl}
+.field{@apply w-full rounded-lg border border-cyan-900/30 bg-white px-4 py-2 text-cyan-950 focus:outline-none focus:ring-2 focus:ring-cyan-700}
+}
+</style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800" x-data="{open:false}">
+<header class="sticky top-0 z-30 bg-cyan-950">
+ <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+  <a href="index.html" class="font-serif text-lg text-white">Marcos Rodriguez</a>
+  <button class="rounded p-2 text-white md:hidden" @click="open=!open" :aria-expanded="open" aria-label="Abrir menú">&#9776;</button>
+  <nav class="hidden gap-6 md:flex" aria-label="Principal"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 font-semibold text-amber-300" aria-current="page">Recuerdos</a></nav>
+ </div>
+ <nav x-show="open" x-cloak class="flex flex-col border-t border-cyan-800 px-4 pb-3 md:hidden" aria-label="Menú móvil"><a href="index.html" class="py-2 text-cyan-100 hover:text-amber-300">Inicio</a><a href="historia.html" class="py-2 text-cyan-100 hover:text-amber-300">Historia</a><a href="familia.html" class="py-2 text-cyan-100 hover:text-amber-300">Familia</a><a href="pasiones.html" class="py-2 text-cyan-100 hover:text-amber-300">Pasiones</a><a href="galeria.html" class="py-2 text-cyan-100 hover:text-amber-300">Galería</a><a href="videos.html" class="py-2 text-cyan-100 hover:text-amber-300">Videos</a><a href="recuerdos.html" class="py-2 font-semibold text-amber-300" aria-current="page">Recuerdos</a></nav>
+</header>
+<main>
+<section class="mx-auto max-w-3xl px-4 py-16" x-data='{i:0,s:[
+"Nos sacaba carcajadas con sus imitaciones. Se metía tanto en el personaje que había que retarlo, después de reírnos.",
+"Siempre fue el alma de la fiesta, el primero en salir a la pista de baile.",
+"Como él mismo decía, se sentía tranquilo porque logró darle estudios a cada uno de sus hijos.",
+"Vuele alto y vaya a poner orden como solo usted sabe hacerlo."],
+msgs:[],n:"",t:"",ok:false}'>
+ <h1 class="h2">Recuerdos</h1>
+ <figure class="card mt-8 min-h-48 text-center" aria-live="polite">
+  <blockquote class="font-serif text-xl italic text-cyan-950" x-text="s[i]"></blockquote>
+  <div class="mt-6 flex justify-center gap-3">
+   <button class="btn" @click="i=(i+s.length-1)%s.length" aria-label="Recuerdo anterior">Anterior</button>
+   <button class="btn" @click="i=(i+1)%s.length" aria-label="Recuerdo siguiente">Siguiente</button>
+  </div>
+ </figure>
+ <p class="mt-10 max-w-prose">Lo recordaremos por sus chistes, sus carcajadas y por ser tal cual era. Nos deja un vacío imposible de llenar.</p>
+ <h2 class="mt-12 font-serif text-2xl text-cyan-950">Deja tu mensaje</h2>
+ <form class="mt-4 space-y-4" @submit.prevent="msgs.unshift({n:n,t:t});n='';t='';ok=true">
+  <div><label for="n" class="block font-semibold">Tu nombre</label><input id="n" class="field" x-model="n" required></div>
+  <div><label for="t" class="block font-semibold">Tu recuerdo</label><textarea id="t" rows="3" class="field" x-model="t" required></textarea></div>
+  <button class="btn" type="submit">Publicar mensaje</button>
+  <p x-show="ok" x-cloak class="text-cyan-800" role="status">Mensaje publicado. Se muestra solo en esta sesión.</p>
+ </form>
+ <ul class="mt-8 space-y-4"><template x-for="m in msgs"><li class="card"><p x-text="m.t"></p><p class="mt-2 font-semibold text-cyan-950" x-text="m.n"></p></li></template></ul>
+</section>
+</main>
+<footer class="bg-cyan-950 px-4 py-8 text-center text-cyan-100">
+ <p class="font-serif text-lg text-white">Marcos Erasmo Mario Rodriguez</p>
+ <p>Nació el 24 de noviembre de 1975 y partió el 12 de julio de 2025, a las 17:09 hrs, en la casa de su hija del medio.</p>
+ <p>Lo queremos de aquí a la luna y las estrellas.</p>
+</footer>
+</body>
+</html>
